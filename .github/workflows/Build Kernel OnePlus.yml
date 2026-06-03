@@ -237,7 +237,7 @@ jobs:
           # 动态调用源码清单仓库，仓库优先级：1️⃣ OnePlusOSS → 2️⃣ Dynamic → 3️⃣ Appendix
           DYNAMIC_REPO_INPUT="${{ github.event.inputs.DYNAMIC_REPO }}"
           declare -A REPOS
-          REPOS["OnePlusOSS"]="OnePlusOSS|kernel_manifest"
+          REPOS["OnePlusOSS"]="SheepChef|kernel_manifest"
           REPOS["Dynamic"]="${DYNAMIC_REPO_INPUT}|kernel_manifest"
           REPOS["Appendix"]="Numbersf|Kernel_Manifest_Appendix"
 
